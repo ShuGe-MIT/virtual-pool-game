@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF8">
+<title>Pool Game!</title>
+<link href="css/pool.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/global.js"></script>
+<script type="text/javascript" src="js/ball.js"></script>
+<script type="text/javascript" src="js/physics.js"></script>
+<script type="text/javascript" src="js/game.js"></script>
+</head>
+<body>
+    <div id="table" style="display:none">
+        <div id="scoreBoard"></div>
+    </div>
+<div id="start_sec">   
+    <h1>Please enter a 6-digit game id and player names to start a game.</h1>
+    <label for="game_id">Game id:</label>
+    <input id="game_id"><br />
+    <label for="p1">Player 1:</label>
+    <input id="p1"><br />
+    <label for="p2">Player 2:</label>
+    <input id="p2"><br />
+    <br /> 
+    <button type="button" onclick="set_game()">Start game!</button>
+    <p id ="hint"></p>
+</div>
+<p id="cur_player" style="display:none">Current player:</p>
+<p id ="remark" style="display:none">Great hit!</p>
+<br>
+<br>
+<table id="recordTable" style="text-align:center;display:none;width: 100%"> 
+    <tr height="20" ><td class="cellpadding" style="font-size:18px"><b>Player</b></td> 
+        <td class="cellpadding" style="font-size:18px"><b>Game Played</b></td>
+        <td class="cellpadding" style="font-size:18px"><b>Win Rate (%)</b></td>
+    </tr> 
+    <tr height="20" style="color:red;">
+        <td class="cellpadding" style="font-weight:bold"></td>
+        <td class="cellpadding"></td> 
+        <td class="cellpadding"> </td>
+    </tr> 
+    <tr height="20" style="color:blue;">
+        <td class="cellpadding" style="font-weight:bold"> </td>
+        <td class="cellpadding"> </td> 
+        <td class="cellpadding"> </td>
+    </tr> 
+    </table>
+<div style="text-align:center;clear:both">
+</div>
+</body>
+</html>
